@@ -3,7 +3,15 @@
   <div class="subtitle"> Coming + Soon + ish</div>
 
 
-  <div class="player">
-    <iframe src="https://embed.spotify.com/?uri=https://play.spotify.com/track/2tXTFiixx0bRIwrs5bKI7U" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-  </div>
+  <%= form_for @song, html: {class: "song-form"} do |f| %>
+      <%= f.label :artist %>
+      <%= f.text_field :artist %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.submit "That's my cut" %>
+  <% end %>
+
+  <iframe src="http://toma.hk/embed.php?artist=<%= @song_play.artist %>&title=<%= @song_play.title %>&autoplay=false&disabledResolvers=Soundcloud" width="200" scrolling="no" height="200" frameborder="0" allowtransparency="true"></iframe>
 </div>
+
+
