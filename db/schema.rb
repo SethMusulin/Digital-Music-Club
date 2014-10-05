@@ -11,14 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141004181555) do
+ActiveRecord::Schema.define(version: 20141005033144) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "playlists", force: true do |t|
+    t.string   "creator"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "songs", force: true do |t|
-    t.string "artist", null: false
-    t.string "title",  null: false
+    t.string  "artist"
+    t.string  "title"
+    t.integer "playlist_id"
   end
 
 end

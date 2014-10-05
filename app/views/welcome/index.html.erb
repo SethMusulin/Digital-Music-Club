@@ -1,17 +1,19 @@
 <div class="container">
   <div class="title">Digital Music Club</div>
   <div class="subtitle"> Coming + Soon + ish</div>
+  <div class="subtitle"><%= link_to "Give Good Playlist", new_playlist_path %></div>
 
 
-  <%= form_for @song, html: {class: "song-form"} do |f| %>
-      <%= f.label :artist %>
-      <%= f.text_field :artist %>
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-      <%= f.submit "That's my cut" %>
+  <% @playlist.each do |playlist| %>
+      Created by: <%= playlist.creator %>
+      Title: <%= playlist.name %>
+      <div class="tracks">
+        <% playlist.songs.each do |song| %>
+            <iframe src="http://toma.hk/embed.php?artist=<%= song.artist %>&title=<%= song.title %>" width="200" scrolling="no" height="200" frameborder="0" allowtransparency="true"></iframe>
+        <% end %>
   <% end %>
-
-  <iframe src="http://toma.hk/embed.php?artist=<%= @song_play.artist %>&title=<%= @song_play.title %>&autoplay=false&disabledResolvers=Soundcloud" width="200" scrolling="no" height="200" frameborder="0" allowtransparency="true"></iframe>
+  </div>
 </div>
+
 
 

@@ -1,0 +1,22 @@
+<div class="container">
+  Give Good Playlist
+
+  <%= form_for @playlist, html: {class: "song-form"} do |f| %>
+      <%= f.label :creator %>
+      <%= f.text_field :creator %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.fields_for :songs do |builder| %>
+
+          <p><%= builder.label :artist %>
+            <%= builder.text_field :artist %>
+            <%= builder.label :title %>
+            <%= builder.text_field :title %>
+          </p>
+      <% end %>
+
+      <%= f.submit "That's my cut" %>
+  <% end %>
+</div>
+

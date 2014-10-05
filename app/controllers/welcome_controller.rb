@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
 
   def index
-    @song = Song.new
     @song_play=Song.last
+    @playlist = Playlist.all
   end
 
 end
