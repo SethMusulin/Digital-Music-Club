@@ -3,7 +3,6 @@ class PlaylistsController < ApplicationController
 
   def new
     @playlist = Playlist.new
-    10.times { @playlist.songs.build }
   end
 
   def create

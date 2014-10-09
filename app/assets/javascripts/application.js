@@ -15,12 +15,12 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+$(document).ready(function () {
   var mouseX, mouseY;
-  var ww = $( window ).width();
-  var wh = $( window ).height();
+  var ww = $(window).width();
+  var wh = $(window).height();
   var traX, traY;
-  $(document).mousemove(function(e){
+  $(document).mousemove(function (e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
     traX = ((4 * mouseX) / 570) + 40;
@@ -29,3 +29,9 @@ $(document).ready(function(){
     $(".title").css({"background-position": traX + "%" + traY + "%"});
   });
 });
+
+function add_fields(link, association, content) {
+  var new_id = new Date().getTime();
+  var regexp = new RegExp("new_" + association, "g");
+  $(link).parent().before(content.replace(regexp, new_id));
+}

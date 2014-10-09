@@ -8,12 +8,6 @@
 
 
 <div class="tracks">
-  <% @playlist.each do |playlist| %>
-      Created by: <%= playlist.creator %>
-      Title: <%= playlist.name %>
-      <% playlist.songs.each do |song| %>
-          <iframe src="http://toma.hk/embed.php?artist=<%= song.artist %>&title=<%= song.title %>" width="200" scrolling="no" height="200" frameborder="0" allowtransparency="true"></iframe>
-      <% end %>
-  <% end %>
+  <iframe src="http://toma.hk/p/tVt2222M?embed=true" width="550" height="430" scrolling="no" frameborder="0" allowtransparency="true" ></iframe>
 </div>
 
