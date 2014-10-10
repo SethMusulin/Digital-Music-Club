@@ -11,10 +11,11 @@ class PlaylistsController < ApplicationController
       redirect_to root_path
     end
   end
-end
 
-private
 
-def playlist_params
-  params.require(:playlist).permit(:name, :creator, songs_attributes: [:id, :artist, :title])
+  private
+
+  def playlist_params
+    params.require(:playlist).permit(:name, :creator, songs_attributes: [:id, :artist, :title])
+  end
 end

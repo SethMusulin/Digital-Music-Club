@@ -2,14 +2,20 @@
 <html>
 <head>
   <title>DigitalMusicClub</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application' %>
-  <link rel="icon" href="/favicon(1).ico" type="image/ico" />
+  <link rel="icon" href="/favicon(1).ico" type="image/ico"/>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="site-wrapper">
+  <div id="site-canvas">
 
-<%= yield %>
+    <%= yield %>
+
+  </div>
+</div>
 
 </body>
 </html>

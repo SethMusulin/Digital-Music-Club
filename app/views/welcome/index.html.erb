@@ -3,9 +3,21 @@
   <div class="subtitle"> Coming + Soon + ish</div>
   <div class="subtitle"><%= link_to "Give Good Playlist", new_playlist_path %></div>
 
+
 </div>
+
 
 <div class="tracks">
-  <iframe src="http://toma.hk/p/tVt2222M?embed=true" width="550" height="430" scrolling="no" frameborder="0" allowtransparency="true" ></iframe>
-</div>
+  <% @playlist.each do |playlist| %>
 
+
+      <p> <span class="creator">Created by: <%= playlist.creator %></span>
+        <span class ="creator">Title: <%= playlist.name %></span>
+
+        <% playlist.songs.each do |song| %>
+
+            <iframe src="http://toma.hk/embed.php?artist=<%= song.artist %>&title=<%= song.title %>" width="200" scrolling="no" height="200" frameborder="0" allowtransparency="true"></iframe>
+        <% end %>
+            </p>
+  <% end %>
+</div>
