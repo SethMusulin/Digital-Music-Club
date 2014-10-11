@@ -44,7 +44,9 @@ a { text-decoration: none; }
   top: 0;
   width: 0;
   height: 100%;
-  background: #3B3B3B;
+//  background: #3B3B3B;
+  background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+  background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
   overflow-y: auto;
   transition: width 0.3s ease;
 
