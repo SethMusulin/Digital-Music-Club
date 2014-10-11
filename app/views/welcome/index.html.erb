@@ -8,16 +8,6 @@
 
 
 <div class="tracks">
-  <% @playlist.each do |playlist| %>
-
-
-      <p> <span class="creator">Created by: <%= playlist.creator %></span>
-        <span class ="creator">Title: <%= playlist.name %></span>
-
-        <% playlist.songs.each do |song| %>
-
-            <iframe src="http://toma.hk/embed.php?artist=<%= song.artist %>&title=<%= song.title %>" width="200" scrolling="no" height="200" frameborder="0" allowtransparency="true"></iframe>
-        <% end %>
-            </p>
-  <% end %>
+  <object width="1000" height="250" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gsPlaylist101551522100" name="gsPlaylist101551522100"><param name="movie" value="http://grooveshark.com/widget.swf" /><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=101551522&p=0&bbg=000000&bth=000000&pfg=000000&lfg=000000&bt=ffffff&pbg=ffffff&pfgh=ffffff&si=ffffff&lbg=ffffff&lfgh=ffffff&sb=ffffff&bfg=666666&pbgh=666666&lbgh=666666&sbh=666666" /><object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="1000" height="250"><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=101551522&p=0&bbg=000000&bth=000000&pfg=000000&lfg=000000&bt=ffffff&pbg=ffffff&pfgh=ffffff&si=ffffff&lbg=ffffff&lfgh=ffffff&sb=ffffff&bfg=666666&pbgh=666666&lbgh=666666&sbh=666666" /><span><a href="http://grooveshark.com/search/playlist?q=Grooveshark%20Test%20List%20%20Seth%20Musulin" title="Grooveshark Test List  by Seth Musulin on Grooveshark">Grooveshark Test List  by Seth Musulin on Grooveshark</a></span></object></object>
 </div>
+

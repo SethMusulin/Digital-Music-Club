@@ -5,14 +5,15 @@
     <%= f.text_field :creator %>
     <%= f.label :name %>
     <%= f.text_field :name %>
-
+   <p>
     <%= f.fields_for :songs do |builder| %>
-        <%= render "song_fields", f: builder %>
+
+        <%= render "playlists/song_fields", f: builder %>
     <% end %>
+   </p>
 
-
-    <%= link_to_add_fields "Add Song", f, :songs %>
-    <%= f.submit "That's my cut" %>
+    <%= link_to_add_fields "Click Here to Add A Song", f, :songs %>
+    <p><%= f.submit "Yo Dave, publish my playlist" %></p>
 <% end %>
 
 
