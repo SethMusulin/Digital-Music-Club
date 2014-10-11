@@ -1,28 +1,8 @@
-== README
+== Digital Music Club
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application built to encourage playlist sharing amongst friends. 
 
-Things you may want to cover:
+The club originated with individuals sharing mixed CD's through the mails and has grown to over 100 people now seeking to
+share music online. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Currently, the application utilizes the Grooveshark API (http://developers.grooveshark.com/)
