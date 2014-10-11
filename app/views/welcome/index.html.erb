@@ -19,15 +19,15 @@
     <h1><span> Digital Music Club </span></h1>
   </header>
 
-
+<% @playlists.each do |playlist| %>
   <div class="content">
-    <a href="#main-nav" class="open-menu" id="open-menu" data-source="<%= @flashvars %>" data-title="<%= @title %>">
-      <img src='http://media.tumblr.com/b21d5fe2dc1400312c92dd1782935cb2/tumblr_inline_n3j290fMVX1qjkcg3.jpg'/>
+    <a href="#main-nav" class="open-menu" id="open-menu" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>">
+      <img src='<%= playlist.picture %>'/>
       Show me that sweet music player</a>
     <a href="#" class="close-menu">
-      <img src='http://media.tumblr.com/b21d5fe2dc1400312c92dd1782935cb2/tumblr_inline_n3j290fMVX1qjkcg3.jpg'>
+      <img src='<%= playlist.picture %>'/>
       Ok, hide that shit </a>
-
+<%end  %>
   </div>
 
 </div>

@@ -1,11 +1,18 @@
-<div class="playlist-create">Give Good Playlist</div>
+<header class="main-header">
+
+  <h1><span> Create that Playlist Dave </span></h1>
+</header>
 
 <%= form_for @playlist, html: {class: "song-form"} do |f| %>
     <%= f.label :creator %>
     <%= f.text_field :creator %>
     <%= f.label :name %>
     <%= f.text_field :name %>
-   <p>
+    <%= f.label :source %>
+    <%= f.text_field :source %>
+    <%= f.label :picture %>
+    <%= f.text_field :picture %>
+    <p>
     <%= f.fields_for :songs do |builder| %>
 
         <%= render "playlists/song_fields", f: builder %>
