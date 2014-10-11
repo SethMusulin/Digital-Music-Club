@@ -1,11 +1,16 @@
 * {
   box-sizing: border-box;
 }
+
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,,800,900);
 
+html, body {
+  min-height: 100%;
+}
 
-html, body { min-height: 100%; }
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
 .main-header {
   background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
@@ -15,19 +20,19 @@ a { text-decoration: none; }
   //  position: fixed;
   width: 100%;
   left: 0;
-  h1{
+  h1 {
     letter-spacing: -6px;
-    overflow:hidden;
-    display:inline-block;
+    overflow: hidden;
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
-    font-size:100px;
+    font-size: 100px;
   }
   span {
     //    background: url("http://www.thisiscolossal.com/wp-content/uploads/2014/06/SunSete_506-Micael-Reynaud.gif")  ;
-    background: url("http://media.giphy.com/media/10y65nmixF4hNe/giphy.gif")  ;
+    background: url("http://media.giphy.com/media/10y65nmixF4hNe/giphy.gif");
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    display:block;
+    display: block;
   }
   transition: all 0.3s ease;
 
@@ -44,11 +49,14 @@ a { text-decoration: none; }
   top: 0;
   width: 0;
   height: 100%;
-//  background: #3B3B3B;
+  //  background: #3B3B3B;
   background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
   background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
   overflow-y: auto;
   transition: width 0.3s ease;
+  .player-here {
+    height: 95%;
+  }
 
   &:after {
     content: "";
@@ -72,6 +80,7 @@ a { text-decoration: none; }
 #main-nav:target {
   width: 18%;
 }
+
 #main-nav:target + .page-wrap {
   width: 80%;
   .open-menu {

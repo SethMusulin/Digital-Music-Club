@@ -15,52 +15,24 @@
 //= require_tree .
 
 $(document).ready(function () {
-  var mouseX, mouseY;
-  var ww = $(window).width();
-  var wh = $(window).height();
-  var traX, traY;
-  $(document).mousemove(function (e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-    traX = ((4 * mouseX) / 570) + 40;
-    traY = ((4 * mouseY) / 570) + 50;
-    console.log(traX);
-    $(".title").css({"background-position": traX + "%" + traY + "%"});
+
+  $('.open-menu').click(function () {
+    var source = this.dataset.source;
+    var title = this.dataset.title;
+    var obj = $("object");
+    if (($('.Pl-title').text() !== title)) {
+      $('.Pl-title').html(title);
+      $("object param[name='flashvars']").attr("value", source);
+      $("embed").attr("flashvars", source);
+      $("object").remove();
+      $(".player-here").append(obj);
+    }
   });
-});
 
-function add_fields(link, association, content) {
-  var new_id = new Date().getTime();
-  var regexp = new RegExp("new_" + association, "g");
-  $(link).parent().before(content.replace(regexp, new_id));
-}
-
-$(document).on('click', '.panel-heading span.clickable', function (e) {
-  var $this = $(this);
-  if (!$this.hasClass('panel-collapsed')) {
-    $this.parents('.panel').find('.panel-body').slideUp();
-    $this.addClass('panel-collapsed');
-    $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
-  } else {
-    $this.parents('.panel').find('.panel-body').slideDown();
-    $this.removeClass('panel-collapsed');
-    $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+  function add_fields(link, association, content) {
+    var new_id = new Date().getTime();
+    var regexp = new RegExp("new_" + association, "g");
+    $(link).parent().before(content.replace(regexp, new_id));
   }
 
-});
-$(document).on('click', '.panel div.clickable', function (e) {
-  var $this = $(this);
-  if (!$this.hasClass('panel-collapsed')) {
-    $this.parents('.panel').find('.panel-body').slideUp();
-    $this.addClass('panel-collapsed');
-    $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
-  } else {
-    $this.parents('.panel').find('.panel-body').slideDown();
-    $this.removeClass('panel-collapsed');
-    $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
-  }
-});
-$(document).ready(function () {
-  $('.panel-heading span.clickable').click();
-  $('.panel div.clickable').click();
 });

@@ -1,24 +1,32 @@
 <nav class="main-nav" id="main-nav">
-  <span>Nick's Picks - Volume 5</span>
-  <object width="260" height="95%" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gsPlaylist10155675130" name="gsPlaylist10155675130"><param name="movie" value="http://grooveshark.com/widget.swf" /><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=101556751&p=0&bbg=000000&bth=000000&pfg=000000&lfg=000000&bt=ffffff&pbg=ffffff&pfgh=ffffff&si=ffffff&lbg=ffffff&lfgh=ffffff&sb=ffffff&bfg=666666&pbgh=666666&lbgh=666666&sbh=666666" /><object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="260" height="95%"><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=101556751&p=0&bbg=000000&bth=000000&pfg=000000&lfg=000000&bt=ffffff&pbg=ffffff&pfgh=ffffff&si=ffffff&lbg=ffffff&lfgh=ffffff&sb=ffffff&bfg=666666&pbgh=666666&lbgh=666666&sbh=666666" /><span><a href="http://grooveshark.com/search/playlist?q=Nicks%20Picks%20-%20DMC%20Volume%2077%20Seth%20Musulin" title="Nicks Picks - DMC Volume 77 by Seth Musulin on Grooveshark">Nicks Picks - DMC Volume 77 by Seth Musulin on Grooveshark</a></span></object></object>
+  <span class="Pl-title">  </span>
+
+  <div class="player-here">
+    <object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="260" height="95%" name="gsPlaylist" class="gsPlaylist" id="gsPlaylist">
+      <param name="wmode" value="window"/>
+      <param name="allowScriptAccess" value="always"/>
+      <param name="flashvars" value=/>
+    </object>
+  </div>
 </nav>
+</object>
 
 <div class="page-wrap">
 
   <header class="main-header">
 
 
-    <h1><span>Digital Music Club</span></h1>
+    <h1><span> Digital Music Club </span></h1>
   </header>
 
 
   <div class="content">
-    <a href="#main-nav" class="open-menu">
+    <a href="#main-nav" class="open-menu" id="open-menu" data-source="<%= @flashvars %>" data-title="<%= @title %>">
       <img src='http://media.tumblr.com/b21d5fe2dc1400312c92dd1782935cb2/tumblr_inline_n3j290fMVX1qjkcg3.jpg'/>
-    Show me that sweet music player</a>
+      Show me that sweet music player</a>
     <a href="#" class="close-menu">
       <img src='http://media.tumblr.com/b21d5fe2dc1400312c92dd1782935cb2/tumblr_inline_n3j290fMVX1qjkcg3.jpg'>
-    Ok, hide that shit </a>
+      Ok, hide that shit </a>
 
   </div>
 
