@@ -13,6 +13,9 @@ class PlaylistsController < ApplicationController
     end
   end
 
+  def show
+
+  end
 
   private
 
