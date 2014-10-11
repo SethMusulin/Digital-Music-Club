@@ -6,3 +6,6 @@ The club originated with individuals sharing mixed CD's through the mails and ha
 share music online. 
 
 Currently, the application utilizes the Grooveshark API (http://developers.grooveshark.com/)
+
+
+Staging Environment: http://digitalmusicclub.herokuapp.com/
