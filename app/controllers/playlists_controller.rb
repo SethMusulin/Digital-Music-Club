@@ -6,8 +6,9 @@ class PlaylistsController < ApplicationController
   end
 
   def create
-    @playlist = Playlist.new(playlist_params)
 
+    @playlist = Playlist.new(playlist_params)
+    @playlist.source = @playlist.source.split[16][7...-1]
     if @playlist.save
       redirect_to root_path
     end

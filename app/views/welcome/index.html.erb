@@ -1,8 +1,10 @@
 <nav class="main-nav" id="main-nav">
-  <span class="Pl-title">  </span>
+
 
   <div class="player-here">
-    <object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="260" height="95%" name="gsPlaylist" class="gsPlaylist" id="gsPlaylist">
+    <p><span class="Pl-title"></span></p>
+
+    <object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="250" height="95%" name="gsPlaylist" class="gsPlaylist" id="gsPlaylist">
       <param name="wmode" value="window"/>
       <param name="allowScriptAccess" value="always"/>
       <param name="flashvars" value=/>
@@ -18,16 +20,20 @@
 
     <h1><span> Digital Music Club </span></h1>
   </header>
+  <div class="side-toggle">
+  <a href="#main-nav" class="open-menu">
+    <img src="http://www.endlessicons.com/wp-content/uploads/2012/11/headphone-icon-614x460.png" height="40px">
+  </a>
+  <a href="#" class="close-menu">
+    <img src="http://cdn.flaticon.com/png/256/38488.png" height="40px">
+  </a></div>
+  <% @playlists.each do |playlist| %>
+      <div class="content">
+        <a href="#main-nav" class="open-player" id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>">
+          <img src='<%= playlist.picture %>'/>
+          </a>
 
-<% @playlists.each do |playlist| %>
-  <div class="content">
-    <a href="#main-nav" class="open-menu" id="open-menu" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>">
-      <img src='<%= playlist.picture %>'/>
-      Show me that sweet music player</a>
-    <a href="#" class="close-menu">
-      <img src='<%= playlist.picture %>'/>
-      Ok, hide that shit </a>
-  </div>
-<%end  %>
+        </div>
+  <% end %>
 
 </div>

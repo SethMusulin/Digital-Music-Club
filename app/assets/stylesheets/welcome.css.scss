@@ -52,10 +52,14 @@ a {
   //  background: #3B3B3B;
   background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
   background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
-  overflow-y: auto;
+//  overflow-y: auto;
   transition: width 0.3s ease;
   .player-here {
     height: 95%;
+  }
+  .Pl-title{
+   font-size: 20px;
+    font-family: 'Raleway';
   }
 
   &:after {
@@ -70,7 +74,7 @@ a {
 }
 
 .content {
-  padding: 2px 20px 20px 20px;
+  padding: 2px 20px 20px 158px;
   img{
     margin-top: 1em
   }
@@ -96,4 +100,9 @@ a {
     width: 100%;
     left: 20%;
   }
+}
+
+.side-toggle{
+  position: fixed;
+  margin-left: -18px;
 }

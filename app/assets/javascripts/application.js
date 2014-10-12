@@ -16,7 +16,7 @@
 
 $(document).ready(function () {
 
-  $('.open-menu').click(function () {
+  $('.open-player').click(function () {
     var source = this.dataset.source;
     var title = this.dataset.title;
     var obj = $("object");
