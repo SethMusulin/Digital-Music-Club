@@ -7,6 +7,12 @@ gem 'newrelic_rpm'
 
 gem 'env', '~> 0.3.0'
 
+group :test, :development do
+  gem 'rspec-rails', '~> 3.1.0'
+  gem 'capybara', '~> 2.4.3'
+  gem 'launchy', '~> 2.4.2'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use postgresql as the database for Active Record
