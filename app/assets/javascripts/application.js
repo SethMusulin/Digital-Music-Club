@@ -16,6 +16,7 @@
 
 $(document).ready(function () {
 
+  //player toggle
   $('.open-player').click(function () {
     var source = this.dataset.source;
     var title = this.dataset.title;
@@ -29,10 +30,26 @@ $(document).ready(function () {
     }
   });
 
+  //song fields
   function add_fields(link, association, content) {
     var new_id = new Date().getTime();
     var regexp = new RegExp("new_" + association, "g");
     $(link).parent().before(content.replace(regexp, new_id));
   }
+
+
+//sign-up
+  $('#request').click(function (event) {
+    event.stopPropagation();
+    $(this).addClass("email");
+    $('.email-send').addClass("email-send-show");
+    $(this).attr("placeholder", "Enter your email...");
+  });
+
+  $('html').click(function () {
+    $('#request').removeClass("email");
+    $('.email-send').removeClass("email-send-show");
+    $('#request').attr("placeholder", "Join the Club");
+  });
 
 });

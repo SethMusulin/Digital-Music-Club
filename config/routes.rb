@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :songs, only: [:new, :create]
-  resources :playlists 
+  resources :playlists
+  resources :users , only: [:create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

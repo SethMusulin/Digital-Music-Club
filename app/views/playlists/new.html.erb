@@ -4,14 +4,14 @@
 </header>
 
 <%= form_for @playlist, html: {class: "song-form"} do |f| %>
-    <%= f.label :creator %>
-    <%= f.text_field :creator %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.label :source %>
-    <%= f.text_field :source %>
-    <%= f.label :picture %>
-    <%= f.text_field :picture %>
+   <p> <%= f.label :creator %>
+    <%= f.text_field :creator %></p>
+    <p><%= f.label :name %>
+    <%= f.text_field :name %></p>
+    <p><%= f.label :source %>
+    <%= f.text_area :source, :cols => "75", :rows => "10"%></p>
+    <p><%= f.label :picture %>
+    <%= f.text_area :picture, :cols => "75", :rows => "2" %></p>
     <p>
     <%= f.fields_for :songs do |builder| %>
 
