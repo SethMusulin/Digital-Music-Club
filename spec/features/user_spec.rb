@@ -2,6 +2,8 @@ require 'rails_helper'
 
 feature "User sign up" do
   scenario "user can add him or herself to the club with e-mail address" do
+    Playlist.create!(creator:"Dave Harris", name:"test list", source:"thesource", picture:"jpg.jpg")
+
     visit '/'
 
     # must not be empty

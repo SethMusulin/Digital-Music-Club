@@ -9,12 +9,15 @@
 </head>
 <body>
 
+<% flash.each do |name, msg| -%>
+    <%= content_tag :div, msg, class: name %>
+<% end -%>
+
+
     <%= yield %>
 
 
 
-    <footer>
-      Brought to you by: Seth Musulin  & Dave Harris <%= Time.now.year %>
-    </footer>
+
 </body>
 </html>

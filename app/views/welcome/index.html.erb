@@ -31,16 +31,26 @@
       <%= f.email_field :email, id: "request", placeholder: "Join the Club" %>
       <%= f.submit "", class: "email-send" %>
   <% end %>
+  <%= link_to "Create Clubber Playlist", new_submission_path, id: "new-submission" %>
 
-  <% @playlists.each do |playlist| %>
-      <div class="content">
-        <a href="#main-nav" class="open-player" id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>">
-          <img src='<%= playlist.picture %>'/>
-        </a>
+  <div class="content">
+    <a href="#main-nav" class="open-player" id="open-player" data-source="<%= @playlists.last.source %>" data-title="<%= @playlists.last.name %>">
+      <img src='<%= @playlists.last.picture %>'/>
+    </a>
 
-      </div>
-  <% end %>
-
-</div>
+  </div>
 
 </div>
+<footer>
+  <div class="toggle-footer">≈ Albums ≈</div>
+
+  <div id="footer-content">
+      <% @playlists.each do |playlist| %>
+          <a href="#main-nav" class="open-player" id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>">
+            <img src='<%= playlist.picture %>'/>
+          </a>
+      <% end %>
+
+    </div>
+
+</footer>

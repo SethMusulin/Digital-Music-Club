@@ -3,6 +3,7 @@ class PlaylistsController < ApplicationController
 
   def new
     @playlist = Playlist.new
+    @submissions = Submission.all
   end
 
   def create

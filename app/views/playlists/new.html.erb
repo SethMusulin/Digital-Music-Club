@@ -21,6 +21,13 @@
 
     <%= link_to_add_fields "Click Here to Add A Song", f, :songs %>
     <p><%= f.submit "Yo Dave, publish my playlist" %></p>
+
+    Recent Playlist Submissions
+    <% @submissions.each do |submission| %>
+        <%= submission.clubber_name %>
+        <%= submission.album_title %>
+        <%= submission.tracks %>
+        <% end %>
 <% end %>
 
 

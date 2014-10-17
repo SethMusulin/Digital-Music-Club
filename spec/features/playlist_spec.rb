@@ -14,5 +14,6 @@ feature 'Playlists' do
     expect(page).to have_content("Digital Music Club")
     expect(page).to have_css("img", visible: "http://media.tumblr.com/b21d5fe2dc1400312c92dd1782935cb2/tumblr_inline_n3j290fMVX1qjkcg3.jpg")
 
+
+    end
   end
-end

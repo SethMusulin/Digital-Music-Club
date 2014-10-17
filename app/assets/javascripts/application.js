@@ -16,7 +16,7 @@
 
 $(document).ready(function () {
 
-  //player toggle
+//player toggle
   $('.open-player').click(function () {
     var source = this.dataset.source;
     var title = this.dataset.title;
@@ -30,7 +30,19 @@ $(document).ready(function () {
     }
   });
 
-  //song fields
+  //playlist menu toggle
+    $(".toggle-footer").click(function(){
+      $("#footer-content").slideToggle("slow");
+    });
+
+  //playlist toggle on album click
+  $('.open-player').click(function(){
+      if($('#footer-content').is(':visible'))
+    $("#footer-content").slideToggle("slow");
+  });
+
+
+//song fields
   function add_fields(link, association, content) {
     var new_id = new Date().getTime();
     var regexp = new RegExp("new_" + association, "g");

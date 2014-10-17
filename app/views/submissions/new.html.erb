@@ -1,0 +1,13 @@
+Just enter your name, the title of the playlist and the songs (with artist and title) and I'll set ya up.
+
+
+<%= form_for @submission do |f| %>
+    <p> <%= f.label :clubber_name, "Clubber Name" %>
+      <%= f.text_field :clubber_name %></p>
+    <p><%= f.label :album_title, "Album Title" %>
+      <%= f.text_field :album_title %></p>
+    <p><%= f.label :tracks %>
+      <%= f.text_area :tracks, :cols => "75", :rows => "10" %></p>
+    <%= f.submit "Submit Playlist" %>
+<% end %>
+
