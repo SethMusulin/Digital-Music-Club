@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
 
   def index
-    @playlists = Playlist.all
+    @playlists = Playlist.order("id ASC")
     @user = User.new
   end
 
