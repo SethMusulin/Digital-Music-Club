@@ -2,12 +2,12 @@
 
 
   <div class="player-here">
-    <p><span class="Pl-title"><%= @playlists.last.name %></span></p>
+    <p><span class="Pl-title"><%= @playlists.first.name %></span></p>
 
     <object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="250" height="95%" name="gsPlaylist" class="gsPlaylist" id="gsPlaylist">
       <param name="wmode" value="window"/>
       <param name="allowScriptAccess" value="always"/>
-      <param name="flashvars" value=<%= @playlists.last.source %>/>
+      <param name="flashvars" value=<%= @playlists.first.source %>/>
     </object>
   </div>
 </nav>
@@ -35,7 +35,7 @@
 
   <div class="content">
 
-      <img src='<%= @playlists.last.picture %>'/>
+      <img src='<%= @playlists.first.picture %>'/>
     </a>
 
   </div>
