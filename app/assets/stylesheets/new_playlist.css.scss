@@ -1,0 +1,19 @@
+//song form
+
+.song-form {
+  margin-left: 1em;
+  width: 45%;
+  float: left;
+}
+
+.submissions {
+  float: right;
+  width: 50%;
+  table{
+    width: 100%;
+    td{
+      border: 2px solid gray;
+      padding: .5em;
+    }
+  }
+}

@@ -3,7 +3,7 @@ class PlaylistsController < ApplicationController
 
   def new
     @playlist = Playlist.new
-    @submissions = Submission.all
+    @submissions = Submission.all.where(published:false).order("id ASC")
   end
 
   def create

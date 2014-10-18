@@ -13,6 +13,13 @@ class SubmissionsController < ApplicationController
     end
   end
 
+  def update
+    @submission = Submission.find(params[:id])
+    @submission.update(published: true)
+    if @submission.save
+      redirect_to new_playlist_path
+    end
+  end
 
   private
 

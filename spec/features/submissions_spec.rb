@@ -14,12 +14,16 @@ feature "Submissions" do
 
     expect(page).to have_content "Your playlist has been submitted"
 
+    # new submission shows up on playlist new page and can be removed
     visit '/playlists/new'
 
     expect(page).to have_content "Recent Playlist Submissions"
     expect(page).to have_content "Dave Harris"
     expect(page).to have_content "Dave Harris Presents - DMC 1"
     expect(page).to have_content "1. Grimes - Oblivion\n 2. Cut Copy - Lights and Music"
+    click_button "Remove"
+    expect(page).to_not have_content "Dave Harris Presents - DMC 1"
+
   end
 
 end

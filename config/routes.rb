@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :songs, only: [:new, :create]
   resources :playlists
   resources :users , only: [:create]
-  resources :submissions, only: [:new, :create]
+  resources :submissions
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,33 +1,51 @@
-<header class="main-header">
+<div class="new-playlist-wrapper">
+  <header class="main-header">
 
-  <h1><span> Create that Playlist Dave </span></h1>
-</header>
+    <h1><span> Create that Playlist Dave </span></h1>
+  </header>
 
-<%= form_for @playlist, html: {class: "song-form"} do |f| %>
-   <p> <%= f.label :creator %>
-    <%= f.text_field :creator %></p>
-    <p><%= f.label :name %>
-    <%= f.text_field :name %></p>
-    <p><%= f.label :source %>
-    <%= f.text_area :source, :cols => "75", :rows => "10"%></p>
-    <p><%= f.label :picture %>
-    <%= f.text_area :picture, :cols => "75", :rows => "2" %></p>
-    <p>
-    <%= f.fields_for :songs do |builder| %>
+  <%= form_for @playlist, html: {class: "song-form"} do |f| %>
+      <p> <%= f.label :creator %>
+        <%= f.text_field :creator %></p>
 
-        <%= render "playlists/song_fields", f: builder %>
-    <% end %>
-   </p>
+      <p><%= f.label :name %>
+        <%= f.text_field :name %></p>
 
-    <%= link_to_add_fields "Click Here to Add A Song", f, :songs %>
-    <p><%= f.submit "Yo Dave, publish my playlist" %></p>
+      <p><%= f.label :source %>
+        <%= f.text_area :source, :cols => "75", :rows => "10" %></p>
 
-    Recent Playlist Submissions
-    <% @submissions.each do |submission| %>
-        <%= submission.clubber_name %>
-        <%= submission.album_title %>
-        <%= submission.tracks %>
+      <p><%= f.label :picture %>
+        <%= f.text_area :picture, :cols => "75", :rows => "2" %></p>
+
+      <p>
+        <%= f.fields_for :songs do |builder| %>
+
+            <%= render "playlists/song_fields", f: builder %>
         <% end %>
-<% end %>
+      </p>
 
+      <%= link_to_add_fields "Click Here to Add A Song", f, :songs %>
+      <p><%= f.submit "Yo Dave, publish my playlist" %></p>
+  <% end %>
 
+  <div class="submissions">
+    <fieldset>
+      <legend>Recent Playlist Submissions</legend>
+      <table>
+        <tr>
+          <th>Clubber</th>
+          <th>Album Name</th>
+          <th>Tracks</th>
+        </tr>
+        <% @submissions.each do |submission| %>
+            <tr>
+              <td><%=button_to "Remove", submission_path(submission.id), :method => :put %></td>
+              <td><%= submission.clubber_name %></td>
+              <td><%= submission.album_title %></td>
+              <td><%= simple_format(submission.tracks) %></td>
+            </tr>
+        <% end %>
+      </table>
+    </fieldset>
+  </div>
+</div>
