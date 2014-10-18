@@ -18,27 +18,29 @@ $(document).ready(function () {
 
 //player toggle
   $('.open-player').click(function () {
+    var pic = this.dataset.pic;
     var source = this.dataset.source;
     var title = this.dataset.title;
     var obj = $("object");
-    if (($('.Pl-title').text() !== title)) {
+    if ($('.Pl-title').text() !== title ) {
       $('.Pl-title').html(title);
       $("object param[name='flashvars']").attr("value", source);
       $("embed").attr("flashvars", source);
       $("object").remove();
       $(".player-here").append(obj);
+      $('.content img').attr("src", pic);
     }
   });
 
   //playlist menu toggle
-    $(".toggle-footer").click(function(){
-      $("#footer-content").slideToggle("slow");
-    });
+  $(".toggle-footer").click(function () {
+    $("#footer-content").slideToggle("slow");
+  });
 
   //playlist toggle on album click
-  $('.open-player').click(function(){
-      if($('#footer-content').is(':visible'))
-    $("#footer-content").slideToggle("slow");
+  $('.open-player').click(function () {
+    if ($('#footer-content').is(':visible'))
+      $("#footer-content").slideToggle("slow");
   });
 
 

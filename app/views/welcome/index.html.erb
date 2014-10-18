@@ -2,12 +2,12 @@
 
 
   <div class="player-here">
-    <p><span class="Pl-title"></span></p>
+    <p><span class="Pl-title"><%= @playlists.last.name %></span></p>
 
     <object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="250" height="95%" name="gsPlaylist" class="gsPlaylist" id="gsPlaylist">
       <param name="wmode" value="window"/>
       <param name="allowScriptAccess" value="always"/>
-      <param name="flashvars" value=/>
+      <param name="flashvars" value=<%= @playlists.last.source %>/>
     </object>
   </div>
 </nav>
@@ -22,7 +22,7 @@
   </header>
   <div class="side-toggle">
     <a href="#main-nav" class="open-menu">
-      <img src="http://www.endlessicons.com/wp-content/uploads/2012/11/headphone-icon-614x460.png" height="40px">
+      <img src="http://www.clipartbest.com/cliparts/M9c/pjy/M9cpjydTE.png" height="40px">
     </a>
     <a href="#" class="close-menu">
       <img src="http://cdn.flaticon.com/png/256/38488.png" height="22px">
@@ -34,7 +34,7 @@
   <%= link_to "Create Clubber Playlist", new_submission_path, id: "new-submission" %>
 
   <div class="content">
-    <a href="#main-nav" class="open-player" id="open-player" data-source="<%= @playlists.last.source %>" data-title="<%= @playlists.last.name %>">
+
       <img src='<%= @playlists.last.picture %>'/>
     </a>
 
@@ -46,7 +46,7 @@
 
   <div id="footer-content">
       <% @playlists.each do |playlist| %>
-          <a href="#main-nav" class="open-player" id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>">
+          <a href="#main-nav" class="open-player"  id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>" data-pic="<%= playlist.picture %>">
             <img src='<%= playlist.picture %>'/>
           </a>
       <% end %>
