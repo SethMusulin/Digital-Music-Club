@@ -8,7 +8,7 @@ class SubmissionsController < ApplicationController
 
     @submission = Submission.new(submission_params)
     if @submission.save
-      flash[:notice] = "Your playlist has been submitted"
+      flash[:notice] = "Your playlist has been submitted. It should show up on the DMC page shortly."
       redirect_to root_path
     end
   end
