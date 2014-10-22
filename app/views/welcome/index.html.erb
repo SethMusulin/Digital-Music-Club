@@ -21,10 +21,7 @@
     <h1><span> Digital Music Club </span></h1>
   </header>
   <div class="side-toggle">
-    <a href="#main-nav" class="open-menu">
-      Tracks <br>
-      <img src="http://3.bp.blogspot.com/-ndTOWLuHUrU/T5iN-2GxI7I/AAAAAAAAAMs/j40KxPpGONw/s1600/finger_pointing_you_leave.gif" height="22px">
-    </a>
+
     <a href="#" class="close-menu">
       Hide<br>
       <img src="https://www.okta.com/blog/wp-content/uploads/2012/06/Finger-Pointing.gif" height="22px">
@@ -36,23 +33,26 @@
   <%= link_to "Create Clubber Playlist", new_submission_path, id: "new-submission" %>
 
   <div class="content">
-
+    <a href="#main-nav" class="open-menu">
       <img src='<%= @playlists.first.picture %>'/>
     </a>
-
   </div>
-
+  <div class="content">
+    <a href="#" class="close-menu">
+      <img src='<%= @playlists.first.picture %>'/>
+    </a>
+  </div>
 </div>
 <footer>
   <div class="toggle-footer">≈ Albums ≈</div>
 
   <div id="footer-content">
-    <div class="toggle-footer close"> X </div>
-      <% @playlists.each do |playlist| %>
-          <a href="#main-nav" class="open-player"  id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>" data-pic="<%= playlist.picture %>">
-            <img src='<%= playlist.picture %>'/>
-          </a>
-      <% end %>
-    </div>
+    <div class="toggle-footer close"> X</div>
+    <% @playlists.each do |playlist| %>
+        <a href="#main-nav" class="open-player" id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>" data-pic="<%= playlist.picture %>">
+          <img src='<%= playlist.picture %>'/>
+        </a>
+    <% end %>
+  </div>
 
 </footer>
