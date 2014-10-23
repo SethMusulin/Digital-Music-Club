@@ -288,3 +288,12 @@ footer {
   border: 1px solid black;
   font-size:  5em;
 }
+
+.errors {
+  color: red;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.field_with_errors { display: inline; }

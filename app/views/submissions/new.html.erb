@@ -5,6 +5,9 @@
 
 Just enter your name, the title of the playlist and the songs (with artist and title) and I'll set ya up.
 
+<% @submission.errors.full_messages.each do |message| %>
+    <div class="errors"><%= message %></div>
+<% end %>
 
 <%= form_for @submission do |f| %>
     <p> <%= f.label :clubber_name, "Clubber Name" %>

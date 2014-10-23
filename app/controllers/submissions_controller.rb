@@ -10,6 +10,8 @@ class SubmissionsController < ApplicationController
       SubmissionMailer.submission_email.deliver
       flash[:notice] = "Your playlist has been submitted. It should show up on the DMC page shortly."
       redirect_to root_path
+    else
+      render :new
     end
   end
 
