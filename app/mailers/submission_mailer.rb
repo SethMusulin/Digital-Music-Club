@@ -3,7 +3,7 @@ class SubmissionMailer < ActionMailer::Base
   default from: "thedigitalmusicclub@gmail.com"
 
   def submission_email
-    mail( :to => "dmc@mailinator.com",
+    mail( :to => "thedigitalmusicclub@gmail.com",
         :subject => 'New Playlist Submission' )
   end
 end
