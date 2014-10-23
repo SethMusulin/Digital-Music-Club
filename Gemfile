@@ -4,6 +4,8 @@ group :production do
   gem 'rails_12factor', '~> 0.0.2'
 end
 
+gem 'sendgrid', '~> 1.2.0'
+
 gem 'newrelic_rpm'
 
 gem 'env', '~> 0.3.0'
