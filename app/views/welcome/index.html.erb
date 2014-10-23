@@ -47,15 +47,16 @@
   </div>
 </div>
 <footer>
-  <div class="toggle-footer">≈ Albums ≈</div>
+  <div class="toggle-footer"> Albums ≈</div>
 
   <div id="footer-content">
     <div class="toggle-footer close"> X</div>
-    <% @playlists.each do |playlist| %>
-        <a href="#main-nav" class="open-player" id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>" data-pic="<%= playlist.picture %>">
-          <img src='<%= playlist.picture %>'/>
-        </a>
-    <% end %>
+    <div class="footer-albums">
+      <% @playlists.each do |playlist| %>
+          <a href="#main-nav" class="open-player" id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>" data-pic="<%= playlist.picture %>">
+            <img src='<%= playlist.picture %>'/>
+          </a>
+      <% end %>
+    </div>
   </div>
-
 </footer>
