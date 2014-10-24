@@ -4,7 +4,7 @@ feature "Submissions" do
   scenario "user can submit potential playlist" do
     Playlist.create!(creator:"Dave Harris", name:"test list", source:"thesource", picture:"jpg.jpg")
 
-    visit root_path
+      visit root_path
 
     click_link "Create Clubber Playlist"
     fill_in "Clubber Name", with: "Dave Harris"

@@ -2,6 +2,7 @@ require 'rails_helper'
 
 feature 'Playlists' do
   scenario 'user can create playlist with grooveshark embedded player source' do
+    Playlist.create!(creator:"Dave Harris", name:"test list", source:"thesource", picture:"jpg.jpg")
 
     visit '/playlists/new'
 
