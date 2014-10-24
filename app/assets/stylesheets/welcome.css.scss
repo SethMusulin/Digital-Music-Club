@@ -52,12 +52,16 @@ a {
   width: 0;
   height: 100%;
   //  background: #3B3B3B;
-  background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
-  background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+//  background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+//  background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
   overflow-y: auto;
   transition: width 0.5s ease;
   .player-here {
     height: 95%;
+    overflow: hidden;
+  }
+  object{
+    height: 101%;
   }
   .Pl-title {
     font-size: 20px;
@@ -71,7 +75,7 @@ a {
     right: 0;
     height: 100%;
     width: 34px;
-    background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
+//    background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
 
   }
 }
@@ -91,7 +95,7 @@ a {
 }
 
 #main-nav:target {
-  width: 18%;
+  width: 20%;
 }
 
 #main-nav:target + .page-wrap {
