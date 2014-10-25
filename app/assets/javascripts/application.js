@@ -16,6 +16,8 @@
 
 $(document).ready(function () {
 
+  $('h1').animate({right: 215});
+
 //player toggle
   $('.open-player').click(function () {
     var pic = this.dataset.pic;
@@ -65,5 +67,6 @@ $(document).ready(function () {
     $('.email-send').removeClass("email-send-show");
     $('#request').attr("placeholder", "Join the Club");
   });
+
 
 });
