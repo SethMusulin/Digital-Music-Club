@@ -16,7 +16,8 @@
 
 $(document).ready(function () {
 
-  $('h1').animate({right: 215});
+  $('h1').animate({right: 215}, 1500);
+
 
 //player toggle
   $('.open-player').click(function () {
@@ -24,7 +25,7 @@ $(document).ready(function () {
     var source = this.dataset.source;
     var title = this.dataset.title;
     var obj = $("object");
-    if ($('.Pl-title').text() !== title ) {
+    if ($('.Pl-title').text() !== title) {
       $('.Pl-title').html(title);
       $("object param[name='flashvars']").attr("value", source);
       $("embed").attr("flashvars", source);
