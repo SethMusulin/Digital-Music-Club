@@ -16,7 +16,7 @@
 
 $(document).ready(function () {
 
-  $('h1').animate({right: 215}, 1500);
+  $('h1').animate({right: 210}, 1300);
 
 
 //player toggle
