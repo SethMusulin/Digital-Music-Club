@@ -39,6 +39,82 @@ a {
     display: block;
     padding-right: 5px;
   }
+  .vert-line{
+    position: absolute;
+    left: 10%;
+    height: inherit;
+    border: 1px groove gray
+  }
+  .line-right1{
+    position: absolute;
+    left: 21%;
+    height: 19%;
+    border: 1px dotted red;
+    margin-top: 3.5%;
+  }
+  .line-right2{
+    position: absolute;
+    left: 22%;
+    height: 17%;
+    border: 1px dotted red;
+    margin-top: 4%;
+  }
+  .line-right3{
+    position: absolute;
+    left: 23%;
+    height: 15%;
+    border: 1px dotted red;
+    margin-top: 4.5%;
+  }
+  .line-right4{
+    position: absolute;
+    left: 24%;
+    height: 13%;
+    border: 1px dotted red;
+    margin-top: 5%;
+  }
+  .line-right5{
+    position: absolute;
+    left: 25%;
+    height: 11%;
+    border: 1px dotted red;
+    margin-top: 5.5%;
+  }
+  .line-right6{
+    position: absolute;
+    left: 26%;
+    height: 9%;
+    border: 1px dotted red;
+    margin-top: 6%;
+  }
+  .line-right7{
+    position: absolute;
+    left: 27%;
+    height: 7%;
+    border: 1px dotted red;
+    margin-top: 6.5%;
+  }
+  .line-right8{
+    position: absolute;
+    left: 28%;
+    height: 5%;
+    border: 1px dotted red;
+    margin-top: 7%;
+  }
+  .line-right9{
+    position: absolute;
+    left: 29%;
+    height: 3%;
+    border: 1px dotted red;
+    margin-top: 7.5%;
+  }
+  .line-right10{
+    position: absolute;
+    left: 30%;
+    height: 1%;
+    border: 1px dotted red;
+    margin-top: 8%;
+  }
   transition: all 0.5s ease;
 
 }
