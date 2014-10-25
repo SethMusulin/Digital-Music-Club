@@ -40,6 +40,10 @@ $(document).ready(function () {
     $("#footer-content").slideToggle("slow");
   });
 
+  $(".close").click(function () {
+    $("#footer-content").slideToggle("slow");
+  });
+
   //playlist toggle on album click
   $('.open-player').click(function () {
     if ($('#footer-content').is(':visible'))

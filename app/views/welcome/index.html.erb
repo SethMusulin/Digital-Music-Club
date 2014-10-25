@@ -2,9 +2,9 @@
 
 
   <div class="player-here">
-    <p><span class="Pl-title"><%= @playlists.first.name %></span></p>
+    <p><div class="Pl-title"><%= @playlists.first.name %></div></p>
 
-    <object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="250" height="95%" name="gsPlaylist" class="gsPlaylist" id="gsPlaylist">
+    <object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="270" height="100%" name="gsPlaylist" class="gsPlaylist" id="gsPlaylist">
       <param name="wmode" value="window"/>
       <param name="allowScriptAccess" value="always"/>
       <param name="flashvars" value=<%= @playlists.first.source %>/>
@@ -46,11 +46,11 @@
     </a>
   </div>
 </div>
-<footer>
   <div class="toggle-footer"> Albums ≈</div>
+<footer>
 
   <div id="footer-content">
-    <div class="toggle-footer close"> X</div>
+    <div class="close"> X</div>
     <div class="footer-albums">
       <% @playlists.each do |playlist| %>
           <a href="#main-nav" class="open-player" id="open-player" data-source="<%= playlist.source %>" data-title="<%= playlist.name %>" data-pic="<%= playlist.picture %>">
