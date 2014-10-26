@@ -17,8 +17,6 @@ a {
 .main-header {
 
   text-align: center;
-  color: white;
-  //  position: fixed;
   width: 100%;
   left: 0;
   margin-top: -3em;
@@ -45,7 +43,7 @@ a {
     position: absolute;
     left: 10%;
     height: inherit;
-    border: 1px groove gray
+    border: 1px groove #363635
   }
   .line-right1 {
     position: absolute;
@@ -132,7 +130,7 @@ a {
   top: 0;
   width: 0;
   height: 105%;
-  border-right: 2px groove gray;
+  border-right: 2px groove #363635;
   overflow: scroll;
   overflow-y: auto;
   transition: width 0.5s ease;
