@@ -1,0 +1,44 @@
+@media screen and (max-width: 750px) {
+
+  h1 {
+    letter-spacing: -6px;
+    overflow: hidden;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    padding-right: 5px;
+    border-bottom: 3px solid #f15d58;
+  }
+
+  .phone-content {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin: 10px;
+
+  }
+  .main-nav {
+    display: none;
+  }
+}
+
+.side-toggle {
+  display: none;
+}
+
+input[type=submit] {
+  width: 12em;
+  height: 2em;
+  background-color: #f15d58;
+  margin-bottom: 1em;
+}
+
+.content{
+  display: none;
+}
+
+.toggle-footer{
+  display: none;
+}
+footer{
+  display: none;
+}

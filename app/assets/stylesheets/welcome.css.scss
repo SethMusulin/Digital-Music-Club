@@ -13,7 +13,11 @@ html, body {
 a {
   text-decoration: none;
 }
+@media screen and (min-width: 750px) {
 
+.phone-content{
+  display: none;
+}
 .main-header {
 
   text-align: center;
@@ -120,12 +124,14 @@ a {
 }
 
 .page-wrap {
+  display: initial;
   float: right;
   width: 100%;
   transition: width 0.5s ease;
 }
 
 .main-nav {
+  display: initial;
   position: fixed;
   top: 0;
   width: 0;
@@ -157,6 +163,7 @@ a {
 }
 
 .content {
+  display: initial;
   text-align: center;
   margin-left: 11em;
   margin-top: 5em;
@@ -191,6 +198,7 @@ a {
 
 // toggle icon
 .side-toggle {
+  display: initial;
   position: fixed;
   margin-left: 10px;
 
@@ -333,6 +341,7 @@ a {
 // playlist menu
 
 footer {
+  display:initial;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -358,6 +367,7 @@ footer {
 }
 
 .toggle-footer {
+  display: initial;
   position: absolute;
   left: 46%;
   width: 110px;
@@ -395,4 +405,5 @@ footer {
 
 .field_with_errors {
   display: inline;
+}
 }
