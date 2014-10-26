@@ -7,6 +7,7 @@
 
 html, body {
   min-height: 100%;
+  //  background-color: #dcddcd;
 }
 
 a {
@@ -23,7 +24,7 @@ a {
   margin-top: -3em;
   margin-bottom: 3em;
   height: 12em;
-  border-bottom: 2px groove gray;
+  border-bottom: 2px solid #f15d58;
   h1 {
     letter-spacing: -6px;
     overflow: hidden;
@@ -33,86 +34,87 @@ a {
     position: absolute;
   }
   span {
-    background: url("http://media.giphy.com/media/10y65nmixF4hNe/giphy.gif");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    //    background: url("http://media.giphy.com/media/10y65nmixF4hNe/giphy.gif");
+    //    -webkit-text-fill-color: transparent;
+    //    -webkit-background-clip: text;
+    color: #363635;
     display: block;
     padding-right: 5px;
   }
-  .vert-line{
+  .vert-line {
     position: absolute;
     left: 10%;
     height: inherit;
     border: 1px groove gray
   }
-  .line-right1{
+  .line-right1 {
     position: absolute;
     left: 21%;
     height: 19%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 3.5%;
   }
-  .line-right2{
+  .line-right2 {
     position: absolute;
     left: 22%;
     height: 17%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 4%;
   }
-  .line-right3{
+  .line-right3 {
     position: absolute;
     left: 23%;
     height: 15%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 4.5%;
   }
-  .line-right4{
+  .line-right4 {
     position: absolute;
     left: 24%;
     height: 13%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 5%;
   }
-  .line-right5{
+  .line-right5 {
     position: absolute;
     left: 25%;
     height: 11%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 5.5%;
   }
-  .line-right6{
+  .line-right6 {
     position: absolute;
     left: 26%;
     height: 9%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 6%;
   }
-  .line-right7{
+  .line-right7 {
     position: absolute;
     left: 27%;
     height: 7%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 6.5%;
   }
-  .line-right8{
+  .line-right8 {
     position: absolute;
     left: 28%;
     height: 5%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 7%;
   }
-  .line-right9{
+  .line-right9 {
     position: absolute;
     left: 29%;
     height: 3%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 7.5%;
   }
-  .line-right10{
+  .line-right10 {
     position: absolute;
     left: 30%;
     height: 1%;
-    border: 1px dotted red;
+    border: 2px dotted #f15d58;
     margin-top: 8%;
   }
   transition: all 0.5s ease;
@@ -193,12 +195,12 @@ a {
 .side-toggle {
   position: fixed;
   margin-left: 10px;
+
+  span {
+    color: #363635;
+  }
 }
 
-#play-button {
-  margin-left: 30em;
-  width: 45%;
-}
 
 //signup form
 
@@ -211,7 +213,8 @@ a {
 #signup #request {
   line-height: normal;
   display: inline-block;
-  background: rgba(43, 44, 53, 0.6);
+//  background: rgba( 54, 54, 53, 0.6);
+  background: rgba(8, 8, 8, 0.8);
   border-radius: 3px;
   padding: 10px 14px;
   border: none;
@@ -228,7 +231,7 @@ a {
 }
 
 #signup #request:hover {
-  background: rgba(8, 8, 8, 0.8);
+  background: rgba(241,93,88,0.8);
 }
 
 #signup #request:focus {
@@ -311,7 +314,8 @@ a {
   line-height: normal;
   display: inline-block;
   //  background: rgba(14, 19, 23, 0.3);
-  background: rgba(43, 44, 53, 0.6);
+//  background: rgba(43, 44, 53, 0.6);
+  background: rgba(8, 8, 8, 0.8);
   border-radius: 3px;
   padding: 10px 14px;
   border: none;
@@ -324,7 +328,8 @@ a {
 }
 
 #new-submission:hover {
-  background: rgba(8, 8, 8, 0.8);
+  background: rgba(241,93,88,0.8);
+
 }
 
 // playlist menu
@@ -363,7 +368,7 @@ footer {
   padding: 14px;
   font-family: 'Raleway';
   cursor: pointer;
-
+  color: #363635;
   text-align: center;
 }
 

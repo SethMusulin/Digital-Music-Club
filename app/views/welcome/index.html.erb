@@ -32,12 +32,12 @@
   </header>
   <div class="side-toggle">
     <a href="#main-nav" class="open-menu">
-      Tracks <br>
-      <img src="http://3.bp.blogspot.com/-ndTOWLuHUrU/T5iN-2GxI7I/AAAAAAAAAMs/j40KxPpGONw/s1600/finger_pointing_you_leave.gif" height="22px">
+      <span>Tracks</span> <br>
+      <span style="font-size:30px"> >></span>
     </a>
     <a href="#" class="close-menu">
-      Hide<br>
-      <img src="https://www.okta.com/blog/wp-content/uploads/2012/06/Finger-Pointing.gif" height="22px">
+     <span> Hide</span><br>
+       <span style="font-size:30px"> <<</span>
     </a></div>
   <%= form_for @user, html: {id: "signup"} do |f| %>
       <%= f.email_field :email, id: "request", placeholder: "Join the Club" %>
