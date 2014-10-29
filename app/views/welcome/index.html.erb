@@ -17,7 +17,7 @@
 <div class="page-wrap">
 
   <header class="main-header">
-    <div class="vert-line"></div>
+    <!--<div class="vert-line"></div>-->
     <div class="line-right1"></div>
     <div class="line-right2"></div>
     <div class="line-right3"></div>
@@ -50,7 +50,7 @@
     </a></div>
   <%= form_for @user, html: {id: "signup"} do |f| %>
       <%= f.email_field :email, id: "request", placeholder: "Join the Club" %>
-      <%= f.submit ">", class: "email-send" %>
+      <%= f.submit "Join", class: "email-send" %>
   <% end %>
   <%= link_to "Create Clubber Playlist", new_submission_path, id: "new-submission" %>
 
