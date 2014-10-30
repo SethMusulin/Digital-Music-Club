@@ -57,7 +57,7 @@ a {
     }
     .vert-line {
       position: absolute;
-      left: 10%;
+      left: 20%;
       height: inherit;
       border: 1px groove #363635
     }
@@ -291,7 +291,8 @@ a {
   }
 
   #signup .email-send.email-send-show:hover {
-    opacity: 0.8;
+//    opacity: 0.8;
+    background: rgb(241, 93, 88);
   }
 
   ::-webkit-input-placeholder {
@@ -344,6 +345,7 @@ a {
     width: 180px;
     text-align: center;
     position: relative;
+    margin-top: 5em;
   }
 
   #new-submission:hover {
