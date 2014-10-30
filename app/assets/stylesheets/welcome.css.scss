@@ -7,7 +7,12 @@
 
 html, body {
   min-height: 100%;
-//  background-image: url('http://i.imgur.com/Zh3nU7S.jpg?1');
+//    background-image: url("http://crop.alphacoders.com/images/534/1280-800-53445.jpg?6688") center no-repeat;
+  background: url("http://crop.alphacoders.com/images/534/1280-800-53445.jpg?6688") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   //  background-color: #dcddcd;
 }
 
@@ -175,8 +180,8 @@ a {
   }
 
   .content {
-    text-align: center;
-    margin-left: 11em;
+//    text-align: center;
+    margin-left: 6em;
     margin-top: 5em;
 
     img {
@@ -387,7 +392,8 @@ a {
     left: 46%;
     width: 110px;
     bottom: 0;
-    font-size: 1.35em;
+    font-size: 2em;
+//    font-weight: bold;
     padding: 14px;
     font-family: 'Raleway';
     cursor: pointer;
