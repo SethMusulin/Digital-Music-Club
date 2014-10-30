@@ -58,7 +58,7 @@ a {
     .vert-line {
       position: absolute;
       left: 20%;
-      height: inherit;
+      height: 12em;
       border: 1px groove #363635
     }
     .line-right1 {
@@ -420,5 +420,10 @@ a {
 
   .field_with_errors {
     display: inline;
+  }
+
+  .notice{
+    margin-top: 1em;
+    margin-left: 1em;
   }
 }
