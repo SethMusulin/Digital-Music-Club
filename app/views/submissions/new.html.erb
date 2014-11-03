@@ -1,8 +1,8 @@
-<header class="main-header">
+<div class="new-submission-page">
+  <header class="main-header">
 
-  <h1><span> Give Good Playlist </span></h1>
+    <span id="dmc"><span class="pink-letter">D</span>igital<span class="pink-letter"> M</span>usic<span class="pink-letter"> C</span>lub</span>
 </header>
-
 
 <span class="submission-text">Just enter your name, the title of the playlist and the songs (with artist and title) and I'll set ya up.</span>
 <% @submission.errors.full_messages.each do |message| %>
@@ -14,8 +14,9 @@
       <%= f.text_field :clubber_name %></p>
     <p><%= f.label :album_title, "Album Title" %>
       <%= f.text_field :album_title %></p>
-    <p><%= f.label :tracks %> <br> <em>  e.g.<br>Big Daddy Kane - Smooth Operator<br>Salt-n-Peppa - Push it<br> ...</em>
+    <p><%= f.label :tracks %> <br> <em>  e.g.<br>Big Daddy Kane - Smooth Operator<br>Salt-n-Peppa - Push it<br></em>
       <%= f.text_area :tracks, :cols => "75", :rows => "10"%></p>
     <%= f.submit "Submit Playlist" %>
 <% end %>
 
+</div>

@@ -1,3 +1,4 @@
+<body id="welcome-container">
 
 <nav class="main-nav" id="main-nav">
 
@@ -17,19 +18,8 @@
 <div class="page-wrap">
 
   <header class="main-header">
-    <div class="vert-line"></div>
-    <div class="line-right1"></div>
-    <div class="line-right2"></div>
-    <div class="line-right3"></div>
-    <div class="line-right4"></div>
-    <div class="line-right5"></div>
-    <div class="line-right6"></div>
-    <div class="line-right7"></div>
-    <div class="line-right8"></div>
-    <div class="line-right9"></div>
-    <div class="line-right10"></div>
 
-    <h1><span> Digital Music Club </span></h1>
+    <span id="dmc"><span class="pink-letter">D</span>igital<span class="pink-letter"> M</span>usic<span class="pink-letter"> C</span>lub</span>
   </header>
 
   <div class="phone-content">
@@ -50,7 +40,7 @@
     </a></div>
   <%= form_for @user, html: {id: "signup"} do |f| %>
       <%= f.email_field :email, id: "request", placeholder: "Join the Club" %>
-      <%= f.submit "Join the Club ", class: "email-send" %>
+      <%= f.submit "Join ", class: "email-send" %>
   <% end %>
   <%= link_to "Create Clubber Playlist", new_submission_path, id: "new-submission" %>
 
@@ -79,3 +69,4 @@
     </div>
   </div>
 </footer>
+</body>

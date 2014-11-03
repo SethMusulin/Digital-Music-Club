@@ -16,7 +16,7 @@
 
 $(document).ready(function () {
 
-  $('h1').animate({right: 210}, 1300);
+  $('#dmc').animate({left: 380}, 1300);
 //  $('.vert-line').animate({left: 293}, 1000);
   $('.side-toggle').animate({bottom: 400}, 1000);
 

@@ -1,6 +1,9 @@
 @media screen and (max-width: 700px) {
+  body#welcome-container {
+    background-color: white;
+  }
 
-  h1 {
+  #dmc {
     letter-spacing: -6px;
     overflow: hidden;
     display: inline-block;

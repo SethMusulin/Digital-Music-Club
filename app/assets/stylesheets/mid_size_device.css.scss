@@ -1,6 +1,9 @@
 
 
 @media screen and (max-width: 1100px) and (min-width: 701px) {
+  body#welcome-container {
+    background-color: #1a1a1a;
+  }
   .main-header {
     text-align: center;
     width: 100%;
@@ -9,20 +12,14 @@
     margin-bottom: 3em;
     height: 8em;
 //        border-bottom: 2px solid #f15d58;
-    h1 {
-//      letter-spacing: -6px;
+    #dmc{
       overflow: hidden;
-      display: inline-block;
       font-family: 'Raleway', sans-serif;
       font-size: 55px;
-      //      position: absolute;
-    }
-    span {
-      color: 363635;
-      display: block;
-//      padding-right: 40px;
       margin-left: 6em;
+      color: white;
     }
+
   }
 
   footer {
