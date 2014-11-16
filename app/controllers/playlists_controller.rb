@@ -3,6 +3,7 @@ class PlaylistsController < ApplicationController
 
   def new
     @playlist = Playlist.new
+    @playlists= Playlist.order(name: :desc)
     @submissions = Submission.all.where(published:false).order("id ASC")
   end
 
@@ -17,6 +18,18 @@ class PlaylistsController < ApplicationController
 
   def show
 
+  end
+  def edit
+    @playlist = Playlist.find(params[:id])
+
+  end
+
+  def update
+    @playlist = Playlist.find(params[:id])
+    @playlist.update(playlist_params)
+    if @playlist.save
+      redirect_to '/playlists/new'
+    end
   end
 
   private

@@ -49,4 +49,14 @@
       </table>
     </fieldset>
   </div>
+
+  <table style="margin-left: 1.5em">
+    <% @playlists.in_groups_of(2, false) do |row_playlists| %>
+        <tr>
+          <% for playlist in row_playlists %>
+              <td style="padding: .5em"><%=link_to playlist.name, edit_playlist_path(playlist) %></td>
+          <% end %>
+        </tr>
+    <% end %>
+  </table>
 </div>

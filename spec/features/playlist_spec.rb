@@ -15,6 +15,22 @@ feature 'Playlists' do
     expect(page).to have_content("Digital Music Club")
     expect(page).to have_css("img", visible: "http://media.tumblr.com/b21d5fe2dc1400312c92dd1782935cb2/tumblr_inline_n3j290fMVX1qjkcg3.jpg")
 
-
-    end
   end
+
+  scenario 'user can update playlist' do
+  Playlist.create!(creator:"Dave Harris", name:"test list", source:"thesource", picture:"jpg.jpg")
+  visit '/playlists/new'
+  expect(page).to have_content("test list")
+  expect(page).to_not have_content("Dave Harris Presents - DMC 1")
+
+  click_link 'test list'
+  fill_in "Name", with: "Dave Harris Presents - DMC 1"
+  click_button "Edit Playlist"
+
+  expect(page).to_not have_content("test list")
+  expect(page).to have_content("Dave Harris Presents - DMC 1")
+
+
+end
+
+end
