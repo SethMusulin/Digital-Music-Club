@@ -2,7 +2,7 @@
   <header class="main-header">
 
     <span id="dmc"><span class="pink-letter">D</span>igital<span class="pink-letter"> M</span>usic<span class="pink-letter"> C</span>lub</span>
-  </header>
+      </header>
 
   <%= form_for @playlist, html: {class: "song-form"} do |f| %>
       <p> <%= f.label :creator %>
@@ -26,6 +26,7 @@
 
       <%= link_to_add_fields "Click Here to Add A Song", f, :songs %>
       <p><%= f.submit "Yo Dave, publish my playlist" %></p>
+      <p><%= link_to "Cancel",root_path %></p>
   <% end %>
 
   <div class="submissions">
