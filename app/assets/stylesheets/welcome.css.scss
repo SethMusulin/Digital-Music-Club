@@ -7,11 +7,11 @@
 
 html, body {
   min-height: 100%;
-  //  background: url('http://i.imgur.com/HFpNBNos.jpg?4') no-repeat center center fixed;
-  //  -webkit-background-size: cover;
-  //  -moz-background-size: cover;
-  //  -o-background-size: cover;
-  //  background-size: cover;;
+    background: url('DMC.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;;
 }
 
 a {
@@ -42,13 +42,13 @@ a {
     margin-top: -3em;
     margin-bottom: 3em;
     height: 12em;
-    border-bottom: 2px solid #f15d58;
+//    border-bottom: 2px solid #f15d58;
 
     #dmc {
-      //    background: url("http://media.giphy.com/media/10y65nmixF4hNe/giphy.gif");
+//          background: url("DMC.png");
       //    -webkit-text-fill-color: transparent;
       //    -webkit-background-clip: text;
-      color: #767676;
+//      color: #767676;
       //      margin-left: 4.5em;
       letter-spacing: -3px;
       overflow: hidden;
@@ -140,7 +140,7 @@ a {
     margin-left: 10px;
 
     span {
-      color: #767676;
+      color: white;
     }
   }
 
@@ -318,12 +318,14 @@ a {
     position: absolute;
     left: 46%;
     width: 110px;
-    bottom: 0;
-    font-size: 1.35em;
+    bottom: -28px;
+    font-size: 5.35em;
     padding: 14px;
-    font-family: 'Raleway';
+    font-family: 'Impact';
+    letter-spacing: 57px;
     cursor: pointer;
-    color: #767676;
+//    background: #2a2a2a;
+    color: #A92F41;
     text-align: center;
   }
 
