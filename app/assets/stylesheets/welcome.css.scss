@@ -169,7 +169,8 @@ a {
     //  background: rgba( 54, 54, 53, 0.6);
     //    background: rgba(8, 8, 8, 0.8);
     background: #2a2a2a;
-    border-radius: 3px;
+    border-radius: 98px;
+    margin-bottom: 10px;
     padding: 10px 14px;
     border: none;
     cursor: pointer;
@@ -275,11 +276,8 @@ a {
     clear: both;
     line-height: normal;
     display: inline-block;
-    //  background: rgba(14, 19, 23, 0.3);
-    //  background: rgba(43, 44, 53, 0.6);
-    //    background: rgba(8, 8, 8, 0.8);
     background: #2a2a2a;
-    border-radius: 3px;
+    border-radius: 91px;
     padding: 10px 14px;
     border: none;
     cursor: pointer;
@@ -288,7 +286,7 @@ a {
     width: 180px;
     text-align: center;
     position: relative;
-    margin-top: 5em;
+//    margin-top: 5em;
   }
 
   #new-submission:hover {
@@ -296,6 +294,23 @@ a {
 
   }
 
+  .about{
+    margin-bottom: 10px;
+    float: right;
+    clear: both;
+    line-height: normal;
+    display: inline-block;
+    background: #2a2a2a;
+    border-radius: 91px;
+    padding: 10px 14px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    width: 180px;
+    text-align: center;
+    position: relative;
+  }
   .now-playing{
   }
 
