@@ -7,6 +7,7 @@
 
 html, body {
   min-height: 100%;
+  overflow: hidden;
 
 }
 
@@ -138,6 +139,15 @@ a {
       -o-transform: rotate(90deg);
       writing-mode: tb-rl;
     }
+    #clickable4 {
+      display: block;
+      width: 15%;
+      margin-left: -28%;
+      margin-bottom: 5%;
+      height: 35%;
+      border-radius: 27%;
+      cursor: pointer;
+    }
 }
 
 .close-menu {
@@ -217,7 +227,7 @@ input#request {
 }
 
 #signup #request:hover {
-  background: rgba(241, 93, 88, 0.8);
+  background: rgba(200, 62, 0, 0.8);
 }
 
 #signup #request:focus {
@@ -261,7 +271,7 @@ input#request {
 
 #signup .email-send.email-send-show:hover {
   //    opacity: 0.8;
-  background: rgb(241, 93, 88);
+  background: rgba(200, 62, 0, 0.8);
   color: white;
 }
 
@@ -317,7 +327,7 @@ input#request {
 }
 
 #new-submission:hover {
-  background: rgba(241, 93, 88, 0.8);
+  background: rgba(200, 62, 0, 0.8);
 
 }
 
@@ -370,12 +380,12 @@ footer {
 }
 
 .toggle-footer {
-  display: initial;
-  position: absolute;
-  left: 48%;
+  left: 54%;
   width: 110px;
   bottom: 0px;
-  font-size: 5.35em;
+  font-size: 3.35em;
+  display: initial;
+  position: absolute;
   font-family: 'Impact';
   letter-spacing: 57px;
   cursor: pointer;
