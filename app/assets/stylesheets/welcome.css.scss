@@ -380,14 +380,17 @@ footer {
 }
 
 .toggle-footer {
-  left: 54%;
-  width: 110px;
+  img{
+    height: 6.5em;
+  }
+  left: 58%;
+//  width: 110px;
   bottom: 0px;
-  font-size: 3.35em;
+//  font-size: 3.35em;
   display: initial;
   position: absolute;
   font-family: 'Impact';
-  letter-spacing: 57px;
+//  letter-spacing: 57px;
   cursor: pointer;
   //    background: #2a2a2a;
   color: #B94B07;
