@@ -43,8 +43,14 @@
       <%= f.submit "Join ", class: "email-send" %>
   <% end %>
    <div class="about">About the Club</div>
+  <div class="about-text">
+    The DMC is a completely free and open collective of music afficionados that want to share the tunes they love getting down to. New, user-created albums will be posted every 2 weeks.
+    <br><br>
+    Join the club to add an album of your own, and to get an email when each new album drops.
+  </div>
   <%= link_to "Create Clubber Playlist", new_submission_path, id: "new-submission" %>
-  <!--<span class="now-playing"><%= @playlists.first.name %></span>-->
+  <!--<span class="now-playing"><%#= @playlists.first.name %></span>-->
+
   <div class="content">
     <!--<a href="#main-nav" class="open-menu">-->
       <!--<img src='<#%= @playlists.first.picture %>'/>-->

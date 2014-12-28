@@ -76,13 +76,14 @@ $(document).ready(function () {
   });
 
 //about
-//  $('.about').click(function (event) {
-//    event.stopPropagation();
-//    $(this).text("Blog 8-bit wolf, lumbersexual Helvetica typewriter locavore fingerstache High Life irony Tumblr. Marfa deep v health goth lomo McSweeney's, pop-up stumptown iPhone Odd Future seitan selfies fap authentic bespoke. Artisan fap post-ironic, quinoa Vice McSweeney's farm-to-table lumbersexual chillwave organic Echo Park Kickstarter aesthetic occupy flexitarian. PBR&B kogi swag, health goth mumblecore fixie brunch Godard freegan hella next level before they sold out readymade. Flexitarian typewriter biodiesel, locavore fingerstache organic Neutra raw denim cardigan actually trust fund lomo Intelligentsia. Wes Anderson readymade 8-bit tousled, kale chips gastropub XOXO Etsy squid narwhal flannel Intelligentsia. 3 wolf moon cold-pressed sartorial, brunch trust fund bicycle rights blog swag Intelligentsia street art yr stumptown. Meggings Echo Park aesthetic four loko paleo. DIY pork belly bespoke, tofu McSweeney's YOLO chillwave drinking vinegar scenester cronut kitsch tote bag keffiyeh street art. Banh mi skateboard selfies selvage Pinterest, sustainable 3 wolf moon chambray pour-over cronut mlkshk post-ironic plaid four dollar toast. Dreamcatcher asymmetrical banh mi actually. Austin Shoreditch bespoke, gentrify actually pug readymade. Pop-up kogi tote bag chillwave. Bicycle rights Etsy Kickstarter, tousled occupy typewriter listicle Williamsburg iPhone kale chips mumblecore Neutra pickled church-key.").fadeIn("slow");;
-//  });
+  $('.about').click(function (event) {
+    event.stopPropagation();
+      $(".about-text").slideToggle("slow");
+  });
 //
-//  $('html').click(function () {
-//    $('.about').html("About the Club");
-//  });
+  $('html').click(function () {
+    if ($('.about-text').is(':visible'))
+    $(".about-text").slideToggle("slow");
+  });
 
 });
