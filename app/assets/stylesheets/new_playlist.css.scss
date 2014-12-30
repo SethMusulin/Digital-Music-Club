@@ -1,11 +1,22 @@
 //song form
 html, .new-playlist-wrapper{
 //  background: white;
+  overflow: scroll;
+a:visited{
+  text-decoration: none;
+}
+}
 
+.playlist-form{
+  width: 50%;
+  margin-bottom: 3em;
+}
+.playlist-link{
+  float:right;
 }
 .song-form {
   margin-left: 1em;
-  width: 45%;
+  width: 50%;
   float: left;
 }
 

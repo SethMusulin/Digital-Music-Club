@@ -1,9 +1,10 @@
 class PlaylistsController < ApplicationController
 
-
+  def index
+    @playlists= Playlist.order(name: :desc)
+  end
   def new
     @playlist = Playlist.new
-    @playlists= Playlist.order(name: :desc)
     @submissions = Submission.all.where(published:false).order("id ASC")
   end
 
@@ -30,6 +31,11 @@ class PlaylistsController < ApplicationController
     if @playlist.save
       redirect_to '/playlists/new'
     end
+  end
+
+  def destroy
+    Playlist.destroy(params[:id])
+    redirect_to '/playlists/new'
   end
 
   private
