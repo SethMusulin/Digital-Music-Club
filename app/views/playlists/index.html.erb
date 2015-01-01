@@ -1,11 +1,13 @@
-<header class="main-header">
-<span id="dmc"><span class="pink-letter">D</span>igital<span class="pink-letter"> M</span>usic<span class="pink-letter"> C</span>lub</span>
-</header>
-<p><%= link_to "Back to New Playlist Form", new_playlist_path %></p>
-<table style="margin-left: 1.5em">
-  <% @playlists.each do |playlist| %>
-      <tr>
-            <td style="padding: .5em"><%=link_to playlist.name, edit_playlist_path(playlist) %></td>
-      </tr>
-  <% end %>
-</table>
+<div class="playlist-index">
+  <header class="main-header">
+    <span id="dmc"><span class="pink-letter">D</span>igital<span class="pink-letter"> M</span>usic<span class="pink-letter"> C</span>lub</span>
+  </header>
+  <p><%= link_to "Back to New Playlist Form", new_playlist_path %></p>
+  <table style="margin-left: 1.5em">
+    <% @playlists.each do |playlist| %>
+        <tr>
+          <td style="padding: .5em"><%= link_to playlist.name, edit_playlist_path(playlist) %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>

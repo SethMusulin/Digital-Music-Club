@@ -1,0 +1,21 @@
+
+<header class="main-header">
+
+  <span id="dmc"><span class="pink-letter">D</span>igital<span class="pink-letter"> M</span>usic<span class="pink-letter"> C</span>lub</span>
+</header>
+
+<div class="users-index">
+  <p><%= link_to "Back to New Playlist Form", new_playlist_path %></p>
+<table>
+  <tr>
+    <th>Remove</th>
+    <th>User email</th>
+  </tr>
+  <% @user.each do |user| %>
+      <tr>
+        <td><%=button_to "Remove", user_path(user), :method => :delete, data: {confirm: "Are you sure?"} %></td>
+        <td><%= user.email %></td>
+      </tr>
+  <% end %>
+</table>
+</div>
