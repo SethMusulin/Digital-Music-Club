@@ -6,7 +6,7 @@
       </header>
 
     <span class="manage-users"><%= link_to "Manage Users", users_path %></span>
-    <span class="manage-emails"><%=button_to "Send Automatic Playlist Email", playlists_mass_email_path, :method => :post, data: {confirm: "You are about to send an mass email, are you sure?"} %></span>
+    <span class="manage-emails"><%=button_to "Send Automatic Playlist Email", playlists_mass_email_path, :method => :post, data: {confirm: "You are about to send a mass email, are you sure?"} %></span>
 
 <div class="playlist-form">
   <%= form_for @playlist, html: {class: "song-form"} do |f| %>
