@@ -1,6 +1,7 @@
 class PlaylistMailer < ActionMailer::Base
   include SendGrid
-  default from: "thedigitalmusicclub@gmail.com"
+  default from: "thedigitalmusicclub@gmail.com",
+          reply_to: "thedigitalmusicclub@gmail.com"
 
   def playlist_email
     mail(:subject => 'The Digital Music Club',
