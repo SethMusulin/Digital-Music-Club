@@ -5,6 +5,6 @@ class PlaylistMailer < ActionMailer::Base
 
   def playlist_email
     mail(:subject => 'The Digital Music Club',
-        :to => 'seth@mailinator.com')
+        :to => sendgrid_recipients(User.all.map { |user| user.email }))
   end
 end
