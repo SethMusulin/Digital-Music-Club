@@ -33,6 +33,12 @@ class PlaylistsController < ApplicationController
     end
   end
 
+  def mass_email
+    PlaylistMailer.playlist_email.deliver
+    flash[:notice] = "Emails Delivered"
+    redirect_to new_playlist_path
+  end
+
   def destroy
     Playlist.destroy(params[:id])
     redirect_to '/playlists/new'

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :songs, only: [:new, :create]
   resources :playlists
+  post 'playlists/mass-email', to: 'playlists#mass_email'
   resources :users
   resources :submissions
 
