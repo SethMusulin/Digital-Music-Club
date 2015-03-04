@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.1'
+
 group :production do
   gem 'rails_12factor', '~> 0.0.2'
 end
@@ -10,7 +12,7 @@ gem 'newrelic_rpm'
 
 gem 'env', '~> 0.3.0'
 
-gem 'puma' 
+gem 'puma'
 
 group :test, :development do
   gem 'rspec-rails', '~> 3.1.0'
