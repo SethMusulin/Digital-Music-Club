@@ -11,7 +11,7 @@ gem 'sendgrid', '~> 1.2.0'
 gem 'newrelic_rpm'
 
 gem 'env', '~> 0.3.0'
-
+gem 'puma'
 
 group :test, :development do
   gem 'rspec-rails', '~> 3.1.0'
